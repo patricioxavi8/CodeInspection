@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ruleset name="Patricio Rules"
-	xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0
+ xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0
 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
-	<description>
- 		Code Inspection Lab, Patricio Tovar
-    </description>
-	<rule ref="category/java/performance.xml" />
-	<rule ref="category/java/bestpractices.xml">
+	 <description>
+	 	Code Inspection Lab, Patricio Tovar
+	 </description>
+	 <rule ref="category/java/performance.xml" />
+	 <rule ref="category/java/bestpractices.xml">
 		<exclude name="SystemPrintln" />
-	</rule>
-	<rule ref="category/java/design.xml/ImmutableField" />
+	 </rule>
+	 <rule ref="category/java/design.xml/ImmutableField" />
 	<rule ref="category/java/design.xml/UseUtilityClass">
 		<priority>1</priority>
 	</rule>
 	<rule ref="category/java/errorprone.xml/BeanMembersShouldSerialize">
-	 	<priority>1</priority>
+	 	<priority>2</priority>
 	</rule>
 	<rule ref="category/java/errorprone.xml/UseLocaleWithCaseConversions">
 		<priority>1</priority>
 	</rule>
-	
 	<rule ref="category/java/documentation.xml/CommentRequired">
-	<priority>1</priority>
-    <properties>
-        <property name="classCommentRequirement" value="Ignored" />
-        <property name="fieldCommentRequirement" value="Ignored" />
-    </properties>
-</rule>
-	
+		<priority>1</priority>
+	    <properties>
+	        <property name="classCommentRequirement" value="Ignored" />
+	        <property name="fieldCommentRequirement" value="Ignored" />
+	    </properties>
+	</rule>
 </ruleset>
